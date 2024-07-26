@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <section class="contenedor__1">
+            <div>
+                 <textarea name="ingreso_text" id="ingreso_texto" placeholder="ingrese texto a encriptar" ></textarea>               
+                <div class="contenedor__1__botones">
+                    <button onclick="encriptar(this)" class="contenedor__1__botones__1" >Encriptar</button>
+                    <button class="contenedor__1__botones__1">desencriptar</button> 
+                </div>
+                <div class="lista">
+                    <ul>
+                        <li>sin tildes</li>
+                        <li>sin mayúsculas</li>
+                    </ul>
+                </div>
+            </div>   
+        </section>
+        <section class="contenedor__2">
+            <article class="contenedor__2__article">
+               <p>Texto Encriptado</p>
+            </article>            
+            <div class="contenedor__2__botones">
+               <img class="copiar" src="copiar.svg" alt="boton copiar">
+                <img class="pegar"  src="nuevo.svg" alt="boton limpiar">               
+            </div>           
+        </section>
+    </main>  
+    <script src="script.js" ></script>
+</body>
+</html>
